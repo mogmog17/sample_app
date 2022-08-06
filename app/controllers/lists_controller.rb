@@ -13,6 +13,7 @@ class ListsController < ApplicationController
   end
 
   def index
+    puts "作成したキー #{ENV['SELECT_KEY']}"
     @lists = List.all
   end
 
